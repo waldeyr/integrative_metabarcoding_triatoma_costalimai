@@ -1,0 +1,8 @@
+# Auxiliary Python environment for downstream integration, QC, and tables
+pandas
+numpy
+scipy
+biopython
+matplotlib
+seaborn
+jupyterlab
