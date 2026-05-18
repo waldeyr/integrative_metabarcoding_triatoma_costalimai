@@ -1,4 +1,4 @@
-# Integrative metabarcoding reveals Trypanosoma cruzi infection, blood-feeding patterns, and gut microbiota in the peridomestic vector Triatoma costalimai
+# Integrative metabarcoding reveals <i>Trypanosoma cruzi</i> infection, blood-feeding patterns, and gut microbiota in the peridomestic vector <i>Triatoma costalimai</i>
 
 ## Authors and Affiliations
 
@@ -16,7 +16,7 @@ Paula Beatriz de Medeiros Santiago<sup>1</sup>; Gabriela Dantas Ribeiro Stival F
 
 ## Abstract
 
-Trypanosoma cruzi causes Chagas disease and circulates through complex transmission cycles involving triatomine vectors and multiple vertebrate hosts across sylvatic, peridomestic, and domestic environments. Triatoma costalimai is a native Cerrado vector associated with rocky habitats and increasingly reported in peridomestic settings. This study applied an integrative metabarcoding strategy to investigate T. cruzi infection in field-collected T. costalimai gut samples, while simultaneously characterizing vertebrate blood meal sources and gut microbiota. Six of thirteen specimens were infected with T. cruzi. Blood meal analysis identified mainly domestic animal hosts, with human blood detected in two specimens. Bacterial profiles were dominated by Actinobacteriota. These results support the epidemiological relevance of peridomestic T. costalimai as a potential bridge vector between sylvatic and domestic cycles and highlight the value of integrated molecular surveillance.
+<i>Trypanosoma cruzi</i> causes Chagas disease and circulates through complex transmission cycles involving triatomine vectors and multiple vertebrate hosts across sylvatic, peridomestic, and domestic environments. <i>Triatoma costalimai</i> is a native Cerrado vector associated with rocky habitats and increasingly reported in peridomestic settings. This study applied an integrative metabarcoding strategy to investigate <i>T. cruzi</i> infection in field-collected <i>T. costalimai</i> gut samples, while simultaneously characterizing vertebrate blood meal sources and gut microbiota. Six of thirteen specimens were infected with <i>T. cruzi</i>. Blood meal analysis identified mainly domestic animal hosts, with human blood detected in two specimens. Bacterial profiles were dominated by <i>Actinobacteriota</i>. These results support the epidemiological relevance of peridomestic <i>T. costalimai</i> as a potential bridge vector between sylvatic and domestic cycles and highlight the value of integrated molecular surveillance.
 
 ## Keywords
 
