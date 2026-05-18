@@ -2,7 +2,7 @@
 
 ## Authors and Affiliations
 
-Paula Beatriz de Medeiros Santiago<sup>1</sup>; Gabriela Dantas Ribeiro Stival Fontoura<sup>1,2</sup>; Rodrigo Gurgel-Goncalves<sup>3</sup>; Marcos Takashi Obara<sup>4</sup>; Vinicius Lima de Miranda; **Waldeyr Mendes Cordeiro da Silva**<sup>5</sup>; Izabela Marques Dourado Bastos<sup>1</sup>; Sebastien Charneau<sup>6</sup>; Coralie Martin<sup>7</sup>; Jaime Martins Santana<sup>1,2</sup>; Carla Nunes de Araujo<sup>1,2,4,*</sup>
+Paula Beatriz de Medeiros Santiago<sup>1</sup>; Gabriela Dantas Ribeiro Stival Fontoura<sup>1,2</sup>; Rodrigo Gurgel-Goncalves<sup>3</sup>; Marcos Takashi Obara<sup>4</sup>; Vinicius Lima de Miranda; Waldeyr Mendes Cordeiro da Silva<sup>5</sup>; Izabela Marques Dourado Bastos<sup>1</sup>; Sebastien Charneau<sup>6</sup>; Coralie Martin<sup>7</sup>; Jaime Martins Santana<sup>1,2</sup>; Carla Nunes de Araujo<sup>1,2,4,*</sup>
 
 1. Universidade de Brasilia, Instituto de Ciencias Biologicas, Laboratorio de Interacao Patogeno-Hospedeiro, Brasilia, DF, Brazil  
 2. Universidade de Brasilia, Programa de Pos-Graduacao em Ciencias Medicas, Brasilia, DF, Brazil  
