@@ -42,19 +42,19 @@ Paula Beatriz de Medeiros Santiago<sup>1</sup>; Gabriela Dantas Ribeiro Stival F
 - Forward-read strategy after primer screening to avoid merge-driven read loss/artifacts.
 - Technical sequence and residual primer removal.
 - Length-window filtering (`120-220 bp`) and FASTA conversion.
-- Exact dereplication (`vsearch`) and Top10 haplotype extraction per sample.
+- Exact dereplication (`vsearch`) and Top10 sequence variant extraction per sample.
 - BLASTn validation against NCBI nt.
 - Infection status classification:
-  - `T. cruzi-positive`: `>= 3` validated haplotypes
-  - `T. cruzi-low signal`: `1-2` validated haplotypes
-  - `T. cruzi-negative`: `0` validated haplotypes
+  - `T. cruzi-positive`: `>= 3` validated sequence variants
+  - `T. cruzi-low signal`: `1-2` validated sequence variants
+  - `T. cruzi-negative`: `0` validated sequence variants
 
 #### 2) Vertebrate 12S branch
 
 - Paired primer screening (`12S_L1085/12S_H1259`) with `cutadapt`.
 - Forward reads truncated to `150 bp`.
 - Removal of 16S bleed-through signature sequence.
-- FASTA conversion, exact dereplication (`vsearch`), and Top10/Top1 extraction.
+- FASTA conversion, exact dereplication (`vsearch`), and Top10/Top1 sequence variant extraction.
 - BLASTn host assignment with minimum support and identity/coverage thresholds.
 - Relative host contribution classes:
   - `Principal`: `>= 50%`
@@ -83,8 +83,8 @@ Paula Beatriz de Medeiros Santiago<sup>1</sup>; Gabriela Dantas Ribeiro Stival F
 |---|---|---|---|
 | Bacterial 16S | SILVA | 138 | Consensus taxonomy, identity threshold `>= 97%` |
 | Fungal ITS1 | UNITE | v10, 99% clustered | Consensus taxonomy, identity threshold `>= 97%` |
-| TCZ haplotypes | NCBI nt (BLASTn) | NCBI | Coverage `>= 95%`, identity `>= 98%`, E-value `<= 1e-20` |
-| 12S host haplotypes | NCBI nt (BLASTn) | NCBI | Coverage `>= 95%`, identity `>= 98%`, E-value `<= 1e-20`, min abundance cutoff |
+| TCZ sequence variants | NCBI nt (BLASTn) | NCBI | Coverage `>= 95%`, identity `>= 98%`, E-value `<= 1e-20` |
+| 12S host sequence variants | NCBI nt (BLASTn) | NCBI | Coverage `>= 95%`, identity `>= 98%`, E-value `<= 1e-20`, min abundance cutoff |
 
 ## Environment Setup
 
@@ -131,7 +131,7 @@ flowchart TD
 
     branchTCZ --> tczForward[Forward-read processing and cleanup]
     tczForward --> tczDerep[Length window 120-220 and dereplication]
-    tczDerep --> tczTop10[Top10 haplotypes]
+    tczDerep --> tczTop10[Top10 sequence variants]
     tczTop10 --> tczBlast[BLASTn NCBI nt validation]
     tczBlast --> tczClass[Infection status classification]
 
@@ -232,12 +232,12 @@ Main expected outputs:
 - `/data/ITS_pipeline/ITS1_taxonomy_global_t1.qza`
 - `/data/ITS_pipeline/ITS1_genus_rel_table_QIIME_clean.tsv`
 
-### 5) BLASTn validation for TCZ and 12S top haplotypes
+### 5) BLASTn validation for TCZ and 12S top sequence variants
 
 ```bash
 # run BLASTn for consolidated Top10 FASTA files
 # then apply coverage/identity/e-value thresholds
-blastn -query <top_haplotypes.fasta> -db nt -outfmt 6 -max_target_seqs 10 -evalue 1e-20 -out <results.tsv>
+blastn -query <top_sequence_variants.fasta> -db nt -outfmt 6 -max_target_seqs 10 -evalue 1e-20 -out <results.tsv>
 ```
 
 ### 6) Integrated review checklist
@@ -251,4 +251,3 @@ blastn -query <top_haplotypes.fasta> -db nt -outfmt 6 -max_target_seqs 10 -evalu
 - All branches were run with standardized scripts and harmonized filtering criteria.
 - Parameter choices from each marker-specific workflow were propagated to final interpretation.
 - Intermediate files, logs, and final tables are required to maintain full auditability.
-
